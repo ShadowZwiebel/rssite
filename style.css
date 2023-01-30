@@ -91,3 +91,11 @@ body {
   font-size: larger;
   text-align: center;
 }
+
+.Schülerinfodrop {
+  display: none;
+}
+
+.Elterninfo: {
+  color:red;
+}
