@@ -1,67 +1,89 @@
-body {
-  margin: 0 !important;
+:root {
+    --darker-grey: #1b1b1b;
+    --grey: #353535;
+    --text: #fff;
+    --red-a: #A8353A;
+}
 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background: var(--grey);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav{
+    width: 100%;
+    height: 68px;
+    background-color: var(--grey);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.11);
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+nav ul li a{
+    font-family: Arial;
+    color: var(--text);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 24px;
+    padding-top: 21px;
+    display: block;
+}
+nav ul li a:hover{
+    background-color: var(--darker-grey);
+} 
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: var(--red-a);
+    padding: 7px;
+    border-radius: 0px 0px 12px 12px;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li a{
+    color: white;
+    padding: 16px 20px;
+    border-radius: 5px;
+}
+nav ul li ul li a:hover{
+    background-color: var(--red-a);
 }
 
 .bgimg-1 {
-  background-image: url("/pics/vo-vorn-black.jpg");
-  height: 1000px;
-
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
-
-.topnavcomp {
-  background-color: #333;
-  overflow: hidden;
-}
-
-.topnav a {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 20px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #3c6e71;
-  color: white;
-}
-
-.logo {
-  padding-left: 30px;
-  height: 50px;
-  padding-top: 5px;
-}
-
-.bigP {
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-    padding-top: 200px;
-    font-size: 100px;
-    color: white;
+    background-image: url("/pics/vo-vorn-black.jpg");
+    height: 1000px;
+  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .klasse_im_plus {
-  height: 100px;
-} 
-
+    height: 100px;
+  } 
+  
 .fit4life {
-  color: white;
-  font-family: 'Dancing Script', cursive;
-  font-size: 100px;
-  text-align: center;
-  padding-top: 300px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 300px;
 }
 
 .klasse_im_plus {
@@ -91,11 +113,14 @@ body {
   font-size: larger;
   text-align: center;
 }
-
-.Schülerinfodrop {
-  display: none;
+  
+.klasseP a {
+    font-weight: bold;
+    color: var(--text);
+    text-decoration: underline;
 }
 
-.Elterninfo: {
-  color:red;
+.logo {
+    width: 150px;
+    padding: 15px;
 }
