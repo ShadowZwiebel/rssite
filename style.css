@@ -88,8 +88,8 @@ nav ul li ul li a:hover{
 
 .klasse_im_plus {
   overflow: hidden;
-  height: 500px;
-  background-color: #333;
+  height: 400px;
+  background-color: var(--grey);
 }
 
 .klasseimg {
@@ -116,6 +116,21 @@ nav ul li ul li a:hover{
   
 .klasseP a {
     font-weight: bold;
+    color: var(--text);
+    text-decoration: underline;
+}
+
+.medienEntwicklung img {
+    float: right;
+    height: 150px;
+    padding-right: 20px;
+}
+
+.medienEntwicklung a {
+    font-weight: bold;
+    padding-top: 100px;
+    padding-right: 480px;
+    float: right;
     color: var(--text);
     text-decoration: underline;
 }
