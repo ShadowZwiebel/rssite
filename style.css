@@ -98,6 +98,14 @@ nav ul li ul li a:hover{
     background-size: cover;
 }
 
+.bgimg-3 {
+    background-image: url("./pics/vo-vorn-black.jpg");
+    height: 400px;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
   
 .fit4life {
     color: white;
@@ -151,8 +159,34 @@ nav ul li ul li a:hover{
     padding-left: 223px;
 }
 
-.aktuelleInfos h3{
+.aktuelleInfos {
+    height: 400px;
+    text-align: center;
     color: var(--text);
+}
+
+.aktuelleInfos h3{
     font-size: 80px;
     padding-top: 100px;
+}
+
+.aktuelleInfos li {
+    font-size: 20px;
+}
+
+.quicklinks {
+    color: var(--text);
+    text-align: center;
+    height: 170px;
+}
+
+.quicklinks h4 {
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.quicklinks a {
+    color: var(--text);
+    text-decoration: underline;
 }
