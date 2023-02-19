@@ -117,7 +117,7 @@ nav ul li ul li a:hover{
 
 .infos {
     display: flex;
-    justify-content: center;
+
     padding: 50px;
 }
 
@@ -147,11 +147,11 @@ nav ul li ul li a:hover{
 }
 
 .klasseImPlusTxt {
-    padding-left: 230px;
+    padding-left: 220px;
 }
 
 .fairtradeTxt {
-    padding-left: 221px;
+    padding-left: 215px;
     
 }
 
