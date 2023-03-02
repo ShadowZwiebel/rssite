@@ -115,9 +115,15 @@ nav ul li ul li a:hover{
     padding-top: 300px;
 }
 
+.real {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
+
 .infos {
     display: flex;
-
     padding: 50px;
 }
 
