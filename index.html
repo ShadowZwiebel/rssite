@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-full" lang="de">
+<html class="h-full scroll-smooth" lang="de">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,7 +69,7 @@
         </div>
 
        <div class="bgimg1 md:hidden relative h-[230px]">
-            <img class="absolute min-h-full" src="./pics/vo vorn.PNG" alt="bg-img">
+            <img class="absolute min-h-full" src="./pics/vo-vorn.png" alt="bg-img">
             <div class="rsvit h-full static flex justify-center">
                 <p class="relative text-gray-11 pt-4 pl-16 text-4xl [font-family:Dancing_Script]">Realschule Viechtach</p>
             </div>
@@ -90,8 +90,8 @@
             </div>
         </div>
 
-        <div class="relative md:hidden h-full">
-            <img src="./pics/Baloon.jpg" alt="">
+        <div class="relative md:hidden ">
+            <img class="h-full" src="./pics/Baloon.jpg" alt="">
         </div>
 
         <div class="md:hidden flex-col items-center justify-center text-center bg-gray-11 h-[700px]">
@@ -190,10 +190,55 @@
                 </div>
             </div>
         </div>
-    <div style="background-image: url(./pics/vo-vorn.png);" class="flex justify-center items- h-full bg-fixed bg-no-repeat bg-cover">
-        <h1 class="text-gray-11 text-6xl pt-7 [font-family:Dancing_Script]">Realschule Viechtach</h1>
+
+<!--Ende Navbar-->
+    <div class="max-sm:hidden h-full">
+        <div style="background-image: url(./pics/vo-vorn-black.jpg);" class="h-full bg-fixed bg-no-repeat bg-cover">
+            <div class="pb-20 flex flex-col text-center justify-center h-full">
+                <h1 class="text-white text-6xl [font-family:Dancing_Script]">Realschule Viechtach</h1>
+                <p class="text-white text-2xl">~ Fit fürs Leben</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col text-center justify-center bg-gray-11 h-[400px]">
+            <div class="text-white text-5xl pb-5">
+                Aktuelles
+            </div>
+            <div class="">
+                <ul class="text-white !list-disc">
+                    <li>Eins</li>
+                    <li>Zwei</li>
+                    <li>Drei</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="background-image: url(./pics/vo-vorn-black.jpg);" class="h-[500px] bg-fixed bg-no-repeat bg-cover"></div>
+
+        <div class="bg-gray-11 h-[400px] flex pr-20 pl-20 justify-between items-center">
+            <div class="flex-col flex items-center">
+                <img class="h-40 mt-10 mb-4" src="./pics/fairtrade-resized.png" alt="Fairtrade">
+                <a class="text-white underline" href="#">Mehr Infos</a>
+            </div>
+            <div class="flex-col flex items-center">
+                <img class="w-[339px] mt-20 mb-4" src="./pics/MedienEntwicklung.png" alt="Medienbildung">
+                <a class="text-white underline" href="#">Zum Plan</a>
+            </div>
+            <div class="flex-col flex items-center">
+                <img class="w-[339px] mt-20 mb-4" src="./pics/KlasseImPlus.png" alt="Klase im puls">
+                <a class="text-white underline" href="#">Zur webseite</a>
+            </div>
+        </div>
+
+        <div class="bg-gray-12 h-[150px] text-white flex flex-col justify-center text-center">
+            <h2 class="text-3xl pb-3">Quick-links:</h2>
+            <ul class="underline">
+                <li><a href="">Mebis</a></li>
+                <li><a href="">Office 365</a></li>
+                <li><a href="">Datenschutz</a></li>
+            </ul>
+        </div>
+
     </div>
-
     </body>
-
 </html>
