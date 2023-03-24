@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/dist/output.css">
+    </head>
+    <body>
+
+
+<!--Beginn Handy-->
+
+
+        <div class="flex md:hidden items-center justify-between bg-gray-700 text-white h-20 relative">
+            <div class="px-5 flex items-center gap-2 h-full">
+                <div class="text-4xl">
+                    <img class="h-13" src="./pics/logo_for_dark.png" alt="logo">
+                </div>
+            </div>
+
+<!--Icon Ende-->
+
+            <div tabindex="0" class="z-10 w-20 [&>.elements]:focus:flex [&>.elements]:hover:flex">
+                <div class="text-3xl flex items-center justify-center h-20">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="elements absolute top-20 left-0 w-full bg-gray-11 flex-col hidden">
+                    <div tabindex="1" class="[&>.elements]:focus:flex [&>.label_.fa-angle-right]:focus:rotate-90 p-2">
+                        <div class="label flex gap-1 items-center cursor-pointer group">
+                            <i class="fa-solid fa-angle-right transition-transform"></i>
+                            <div class="group-hover:underline">
+                                Schülerinfo
+                            </div>
+                        </div>
+                        <a class="elements hidden ml-3" href="#">
+                            A
+                        </a>
+                        <a class="elements hidden ml-3" href="#">
+                            B
+                        </a>
+                    </div>
+                    
+                    <div tabindex="2" class="[&>.elements]:focus:flex [&>.label_.fa-angle-right]:focus:rotate-90 p-2">
+                        <div class="label flex gap-1 items-center cursor-pointer group">
+                            <i class="fa-solid fa-angle-right transition-transform"></i>
+                            <div class="group-hover:underline">
+                                Elterninfo
+                            </div>
+                        </div>
+                        <a class="elements hidden ml-3" href="#">
+                            A
+                        </a>
+                        <a class="elements hidden ml-3" href="#">
+                            B
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="bgimg1 md:hidden relative h-[230px]">
+            <img class="absolute min-h-full" src="./pics/vo vorn.PNG" alt="bg-img">
+            <div class="rsvit h-full static flex justify-center">
+                <p class="relative text-gray-700 pt-4 pl-16 text-4xl [font-family:Dancing_Script]">Realschule Viechtach</p>
+            </div>
+        </div> 
+
+        <div class="md:hidden flex content-center justify-center items-center bg-gray-700 h-[240px]">
+            <div class="justify-center pb-8">
+                <h3 class="text-white text-4xl pt-6 pb-3">Aktuelles:</h3>
+                
+                <div class="flex justify-center">
+                    <ul class="text-white text-2xl list-disc">
+                        <li>A</li>
+                        <li>A</li>
+                        <li>A</li>
+                        <li>A</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative md:hidden h-full">
+            <img src="./pics/Baloon.jpg" alt="">
+        </div>
+
+        <div class="md:hidden flex-col items-center justify-center text-center bg-gray-700 h-[700px]">
+            <div class="flex-col flex items-center">
+                <img class="h-40 mt-10 mb-4" src="./pics/fairtrade-resized.png" alt="Fairtrade">
+                <a class="text-white underline" href="#">Mehr Infos</a>
+            </div>
+            <div class="flex-col flex items-center">
+                <img class="w-[339px] mt-20 mb-4" src="./pics/MedienEntwicklung.png" alt="Medienbildung">
+                <a class="text-white underline" href="#">Zum Plan</a>
+            </div>
+            <div class="flex-col flex items-center">
+                <img class="w-[339px] mt-20 mb-4" src="./pics/KlasseImPlus.png" alt="Klase im puls">
+                <a class="text-white underline" href="#">Zur webseite</a>
+            </div>
+        </div>
+
+        <div class="md:hidden inset-0 flex-col justify-center items-center text-center text-white bg-gray-900 h-40">
+            <h4 class="pt-10 text-2xl mb-2">Quick Links:</h4>
+            <a class="underline" href="">Mebis</a> <br>
+            <a class="underline" href="">Office 365</a> <br>
+        </div>
+        
+<!--Beginn PC-->
+
+
+        <div class="hidden md:flex items-center justify-between bg-rose-900 text-white h-20">
+
+<!--Icon-->
+            <div class="px-5 flex items-center gap-2 h-full">
+                <div class="text-4xl">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+                <div>
+                    Schule des<br />
+                    Grauens
+                </div>
+            </div>
+
+<!--Icon ende-->
+
+            <div class="flex [&>*]:px-3 [&>*]:h-full h-full">
+                <div class="group hover:bg-rose-800 flex items-center relative select-none">
+                    Schülerinfo
+
+                    <div class="hidden min-w-full group-hover:flex flex-col absolute right-0 top-20 bg-rose-800">
+                        <a class="p-2 hover:bg-rose-700 cursor-pointer">
+                            A
+                        </a>
+                        <a class="p-2 hover:bg-rose-700 cursor-pointer">
+                            A
+                        </a>
+                    </div>
+                </div>
+                <div class="group hover:bg-rose-800 flex items-center relative select-none">
+                    Elterninfo
+
+                    <div class="hidden min-w-full group-hover:flex flex-col absolute right-0 top-20 bg-rose-800">
+                        <a class="p-2 hover:bg-rose-700 cursor-pointer">
+                            A
+                        </a>
+                        <a class="p-2 hover:bg-rose-700 cursor-pointer">
+                            A
+                        </a>
+                    </div>
+                </div>
+                <div class="group hover:bg-rose-800 flex items-center relative select-none">
+                    Aktuelles
+
+                    <div class="hidden min-w-full group-hover:flex flex-col absolute right-0 top-20 bg-rose-800">
+                        <a class="p-2 hover:bg-rose-700 cursor-pointer">
+                            A
+                        </a>
+                        <a class="p-2 hover:bg-rose-700 cursor-pointer">
+                            A
+                        </a>
+                    </div>
+                </div>
+                <div class="group hover:bg-rose-800 flex items-center relative select-none">
+                    Schulfamilie
+
+                    <div class="hidden min-w-full group-hover:flex flex-col absolute right-0 top-20 bg-rose-800">
+                        <a class="p-2 hover:bg-rose-700 cursor-pointer">
+                            A
+                        </a>
+                        <a class="p-2 hover:bg-rose-700 cursor-pointer">
+                            A
+                        </a>
+                    </div>
+                </div>
+                <div class="group hover:bg-rose-800 flex items-center relative select-none">
+                    Kontakt
+
+                    <div class="hidden min-w-full group-hover:flex flex-col absolute right-0 top-20 bg-rose-800">
+                        <a class="p-2 hover:bg-rose-700 cursor-pointer">
+                            A
+                        </a>
+                        <a class="p-2 hover:bg-rose-700 cursor-pointer">
+                            A
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
