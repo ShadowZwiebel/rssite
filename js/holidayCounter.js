@@ -70,4 +70,4 @@ function countdown() {
   }
 }
 
-setInterval(countdown, 900);
+setInterval(countdown, 500);
