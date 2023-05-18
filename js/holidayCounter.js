@@ -15,6 +15,7 @@ var winFerienEnde = new Date('2024-02-16');
 function countdown() {
     var jetzt = new Date();
     var countdownElement = document.getElementById('countdown');
+    var countdownElementTwo = document.getElementById('countdownTwo');
 
     var somdiffms = somFerienStart - jetzt; // Differenz in Millisekunden
     var pfidiffms = pfiFerienStart - jetzt; // Differenz in Millisekunden
@@ -56,18 +57,30 @@ function countdown() {
 
 
   if ((somdiff < pfidiff) && (somdiff < ostdiff) && (somdiff < herdiff) && (somdiff < weidiff) && (somdiff < windiff)){
+    countdownElementTwo.textContent = 'Sommerferien sind in ' + somdiff + ' Tagen, ' + somStunden + ' Stunden, ' + somMinuten + ' Sekunden und ' + somSekunden + ' Sekunden';
     countdownElement.textContent = 'Sommerferien sind in ' + somdiff + ' Tagen, ' + somStunden + ' Stunden, ' + somMinuten + ' Sekunden und ' + somSekunden + ' Sekunden';
-  } else if ((pfidiff < somdiff) && (pfidiff < ostdiff) && (pfidiff < herdiff) && (pfidiff < weidiff) && (pfidiff < windiff)) {
+  } 
+  else if ((pfidiff < somdiff) && (pfidiff < ostdiff) && (pfidiff < herdiff) && (pfidiff < weidiff) && (pfidiff < windiff)) {
+    countdownElementTwo.textContent = 'Pfingstferien sind in ' + pfidiff + ' Tagen, ' + pfiStunden + ' Stunden, ' + pfiMinuten + ' Sekunden und ' + pfiSekunden + ' Sekunden';
     countdownElement.textContent = 'Pfingstferien sind in ' + pfidiff + ' Tagen, ' + pfiStunden + ' Stunden, ' + pfiMinuten + ' Sekunden und ' + pfiSekunden + ' Sekunden';
-  } else if ((ostdiff < somdiff) && (ostdiff < pfidiff) && (ostdiff < herdiff) && (ostdiff < weidiff) && (ostdiff < windiff)) {
+  } 
+  else if ((ostdiff < somdiff) && (ostdiff < pfidiff) && (ostdiff < herdiff) && (ostdiff < weidiff) && (ostdiff < windiff)) {
     countdownElement.textContent = 'Osterferien sind in ' + ostdiff + ' Tagen, ' + ostStunden + ' Stunden, ' + ostMinuten + ' Sekunden und ' + ostSekunden + ' Sekunden';
-  } else if ((herdiff < somdiff) && (herdiff < pfidiff) && (herdiff < ostdiff) && (herdiff < weidiff) && (herdiff < windiff)) {
+    countdownElementTwo.textContent = 'Osterferien sind in ' + ostdiff + ' Tagen, ' + ostStunden + ' Stunden, ' + ostMinuten + ' Sekunden und ' + ostSekunden + ' Sekunden';
+  } 
+  else if ((herdiff < somdiff) && (herdiff < pfidiff) && (herdiff < ostdiff) && (herdiff < weidiff) && (herdiff < windiff)) {
     countdownElement.textContent = 'Herbstdiff sind in ' + herdiff + ' Tagen, ' + herStunden + ' Stunden, ' + herMinuten + ' Sekunden und ' + herSekunden + ' Sekunden';
-  } else if ((weidiff < somdiff) && (weidiff < pfidiff) && (weidiff < ostdiff) && (weidiff < herdiff) && (weidiff < windiff)) {
+    countdownElementTwo.textContent = 'Herbstdiff sind in ' + herdiff + ' Tagen, ' + herStunden + ' Stunden, ' + herMinuten + ' Sekunden und ' + herSekunden + ' Sekunden';
+  } 
+  else if ((weidiff < somdiff) && (weidiff < pfidiff) && (weidiff < ostdiff) && (weidiff < herdiff) && (weidiff < windiff)) {
     countdownElement.textContent = 'Weihnachtsferien sind in ' + weidiff + ' Tagen, ' + weiStunden + ' Stunden, ' + weiMinuten + ' Sekunden und ' + weiSekunden + ' Sekunden';
-  } else if ((windiff < somdiff) && (windiff < pfidiff) && (windiff < ostdiff) && (windiff < herdiff) && (windiff < windiff)) {
+    countdownElementTwo.textContent = 'Weihnachtsferien sind in ' + weidiff + ' Tagen, ' + weiStunden + ' Stunden, ' + weiMinuten + ' Sekunden und ' + weiSekunden + ' Sekunden';
+  } 
+  else if ((windiff < somdiff) && (windiff < pfidiff) && (windiff < ostdiff) && (windiff < herdiff) && (windiff < windiff)) {
     countdownElement.textContent = 'Winterferien sind in ' + windiff + ' Tagen, ' + winStunden + ' Stunden, ' + winMinuten + ' Sekunden und ' + winSekunden + ' Sekunden';
+    countdownElementTwo.textContent = 'Winterferien sind in ' + windiff + ' Tagen, ' + winStunden + ' Stunden, ' + winMinuten + ' Sekunden und ' + winSekunden + ' Sekunden';
+
   }
 }
 
-setInterval(countdown, 500);
+setInterval(countdown, 1000);
