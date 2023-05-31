@@ -10,7 +10,7 @@
 .animate__animated.animate__bounceIn {
   --animate-duration: 0.5s;
 }
-
+ 
 .reveal{
   position: relative;
   transform: translateY(150px);
@@ -20,6 +20,7 @@
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
+  position: ;
 }
 
 
