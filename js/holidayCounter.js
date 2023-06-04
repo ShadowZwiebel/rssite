@@ -11,6 +11,9 @@ var weiFerienEnde = new Date('2024-01-05');
 var winFerienStart = new Date('2024-02-12');
 var winFerienEnde = new Date('2024-02-16');
 
+
+
+
 function countdown() {
     var jetzt = new Date(); // Aktuelles Datum
     var countdownElement = document.getElementById('countdown');
@@ -54,8 +57,24 @@ function countdown() {
     var winSekunden = Math.floor((windiffms % (1000 * 60)) / 1000); // Sekunden
   
 
-
-
+    if (somdiff < 0) {
+      updateFerienYear(somFerienStart, somFerienEnde);
+    }
+    if (pfidiff < 0) {
+      updateFerienYear(pfiFerienStart, pfiFerienEnde);
+    }
+    if (ostdiff < 0) {
+      updateFerienYear(ostFerienStart, ostFerienEnde);
+    }
+    if (herdiff < 0) {
+      updateFerienYear(herFerienStart, herFerienEnde);
+    }
+    if (weidiff < 0) {
+      updateFerienYear(weiFerienStart, weiFerienEnde);
+    }
+    if (windiff < 0) {
+      updateFerienYear(winFerienStart, winFerienEnde);
+    }
 
 
   if ((somdiff < pfidiff) && (somdiff < ostdiff) && (somdiff <herdiff) && (somdiff < weidiff) && (somdiff < windiff)){
@@ -83,5 +102,11 @@ function countdown() {
     countdownElementTwo.textContent = 'Winterferien sind in ' + windiff + ' Tagen, ' + winStunden + ' Stunden, ' + winMinuten + ' Sekunden und ' + winSekunden + ' Sekunden';
   }
 }
+
+function updateFerienYear(ferienStart, ferienEnde) {
+  ferienStart.setFullYear(ferienStart.getFullYear() + 1);
+  ferienEnde.setFullYear(ferienEnde.getFullYear() + 1);
+}
+
 
 setInterval(countdown, 1000);
