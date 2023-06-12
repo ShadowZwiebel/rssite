@@ -1,0 +1,50 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html class="h-full scroll-smooth" lang="de">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="./js/scroll.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/dist/output.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+        <style>
+            body::-webkit-scrollbar {
+                display: none;
+            }
+        </style>
+    </head>
+
+
+<body class="h-full">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/handlebar.js"></script>
+    
+    <script>
+    $.get("navbar.hbs", function(templateHtml) {
+      var navbarTemplate = Handlebars.compile(templateHtml);
+      var navbarHtml = navbarTemplate();
+      $("body").prepend(navbarHtml);
+    });
+  </script>
+
+    <div class="md:hidden h-full">
+        <!--Handy!-->
+    </div>
+
+    <div class="max-sm:hidden h-full">
+        <div style="height: 100%; background-image: url(../pics/vo-vorn-black.jpg);" class="bg-fixed bg-no-repeat bg-cover"></div>
+    </div>
+
+</body>
+</html>
