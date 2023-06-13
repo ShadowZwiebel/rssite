@@ -1,4 +1,3 @@
-// app.js
 $(document).ready(function() {
     $.get("../templates/navbar.hbs", function(templateHtml) {
       var navbarTemplate = Handlebars.compile(templateHtml);

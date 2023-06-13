@@ -28,7 +28,7 @@
 <body class="h-full">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../js/handlebar.js"></script>
+    <script src="../js/handlebar-navbar.js"></script>
     
     <script>
     $.get("navbar.hbs", function(templateHtml) {
@@ -42,9 +42,39 @@
         <!--Handy!-->
     </div>
 
+
+    <!--PC-->
     <div class="max-sm:hidden h-full">
-        <div style="height: 100%; background-image: url(../pics/vo-vorn-black.jpg);" class="bg-fixed bg-no-repeat bg-cover"></div>
+        <div style="height: 25%; background-image: url(../pics/vo-vorn.png);" class="bg-fixed bg-no-repeat bg-cover"></div>
+        <div class="h-[300px] bg-gray-11 flex flex-col justify-center p-6 text-white">
+            <p class="pb-5">
+                zum einfacheren Informationsaustausch zwischen Eltern, Lehrern und Schülern hat die Realschule Viechtach das elektronische System „Schulmanager“ eingeführt.
+            </p>
+            <p class="pb-5">
+                Aktueller Vertretungs- Stundenplan, Krankmeldungen, Schulbefreiungen und tägliche Termine können über dieses System abgerufen und bearbeitet werden.
+            </p>
+            <p>
+                Eine genaue Anleitung für die Erstanmeldung finden Sie
+                <a href="../files/Erstanmeldung_Schulmanager.pdf" target="_blank" class="underline text-red-400">hier</a>.
+            </p>
+        </div>
+        <div style="height: calc(100% - 25% - 300px); background-image: url(../pics/vo-vorn.png);" class="bg-fixed bg-no-repeat bg-cover"></div>
     </div>
 
+    <footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/handlebar-footer.js"></script>
+        
+        <script>
+            $.get("navbar.hbs", function(templateHtml) {
+            var footerTemplate = Handlebars.compile(templateHtml);
+            var footerHtml = navbarTemplate();
+            $("footer").prepend(footerHtml);
+            });
+        </script>
+
+    </footer>
 </body>
 </html>
